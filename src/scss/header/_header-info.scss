@@ -1,0 +1,47 @@
+.header-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  $root: &;
+
+  background-color: #22252E;
+  height: 40px;
+  line-height: 40px;
+
+  &__list-item {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: $grey;
+
+    & + & {
+      margin-left: 32px;
+    }
+
+    &:last-child {
+      color: #fff;
+    }
+
+    &--danger {
+      color: $orange;
+      font-weight: 700;
+    }
+  }
+
+  &__close {
+    font-size: 14px;
+    position: absolute;
+    right: 13px;
+    color: $grey;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: color .3s ease;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
