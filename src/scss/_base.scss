@@ -1,14 +1,10 @@
 body {
-  font-family: $montserrat;
-  //color: rgba($black, 0.8);
-  //background-color: $bg-gray;
+  font-family: $roboto;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 1.2;
-
-  @include mobile-large {
-    font-size: 14px;
-  }
+  font-size: 14px;
+  line-height: 1;
+  color: $light-black;
+  background-color: #f2f2f2;
 }
 
 .container-fluid {
@@ -17,7 +13,7 @@ body {
 
 .container {
   padding: 0 15px;
-  max-width: 1170px;
+  max-width: 1230px;
   margin: 0 auto;
 
   @include laptop {
@@ -51,9 +47,11 @@ body {
     display: block;
   }
 }
-
 .text-orange {
-  color: $orange;
+  color: $orange !important;
+}
+.text-red {
+  color: $red !important;
 }
 
 .text-upper {
@@ -62,7 +60,9 @@ body {
 .text-camel {
   text-transform: capitalize;
 }
-
+.text-line-through {
+  text-decoration: line-through;
+}
 .fz-15 {
   font-size: 15px !important;
 }
@@ -148,73 +148,53 @@ strong {
   margin-bottom: auto;
 }
 
+.main-wrapper {
+  padding-top: 40px;
+  padding-bottom: 118px;
+}
+
 .btn {
   display: inline-block;
-  vertical-align: top;
-  padding: 14px 32px;
-  line-height: 16px;
-  font-size: 13px;
-  font-weight: 600;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  line-height: 18px;
+  padding: 10px 20px;
   text-align: center;
+  text-transform: uppercase;
   border-radius: 30px;
-  transition: all .3s ease-in-out;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   white-space: nowrap;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  flex-shrink: 0;
 
-  @include  mobile {
-    width: 90%;
+  &--default {
+    color: $green;
+    border-color: $green;
+
+    &:hover {
+      color: #fff;
+      background-color: $green;
+    }
   }
 
-
-  //@include mobile-large {
-  //  min-width: 180px;
-  //  font-size: 1.1rem;
-  //  padding: 4px 6px;
-  //}
-  //@include mobile {
-  //  width: 220px;
-  //  padding: 2px 6px;
-  //}
-
-  span {
-    display: block;
-  }
-}
-
-.btn--phone::before {
-  font-family: 'Font Awesome 5 Free';
-  padding: 4px;
-  font-weight: 900;
-  content: "\f2a0";
-  font-size: 2rem;
-  margin-right: 6px;
-  transform: rotate(-35deg);
-
-  @include mobile-large {
-    font-size: 1.6rem;
-    margin-left: 6px;
+  &.btn--wide {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
-  @include mobile {
-    margin-right: 18px;
-  }
-}
+  &--green {
+    color: #fff;
+    background-color: $green;
 
-.btn--email::before {
-  font-family: 'Font Awesome 5 Free';
-  padding: 4px 4px 4px 0;
-  font-weight: 400;
-  content: "\f0e0";
-  font-size: 2rem;
-  margin-right: 6px;
-
-  @include mobile-large {
-    font-size: 1.6rem;
-    margin-left: 6px;
-  }
-
-  @include mobile {
-    margin-right: 18px;
+    &:hover {
+      color: $green;
+      background-color: #fff;
+      border-color: $green;
+    }
   }
 }

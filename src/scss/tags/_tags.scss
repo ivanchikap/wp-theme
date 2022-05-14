@@ -1,0 +1,35 @@
+.tags {
+  height: 60px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $light-black;
+
+
+  .container {
+    padding: 21px 48px;
+    background-color: #F7F7F7;
+    border-radius: 4px;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: 42px;
+    margin-right: 20px;
+  }
+
+  &__list-item {
+    color: $green;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+
+    & + & {
+      margin-left: 34px;
+    }
+  }
+
+  &__right-item:first-child {
+    margin-right: 38px;
+  }
+}

@@ -1,0 +1,33 @@
+.sign-up {
+  padding: 102px 0 58px 0;
+  background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+
+  &__title {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 64px;   
+    letter-spacing: -0.5px;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+
+  &__payment-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin-right: 30px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & + & {
+      margin-left: 36px;
+    }
+  }
+}

@@ -13,12 +13,8 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  @include mobile {
-    margin-right: -10px;
-    margin-left: -10px;
-  }
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .no-gutters {
@@ -38,8 +34,8 @@
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .col {

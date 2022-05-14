@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,7 +22,7 @@
                 <ul class="header-info__list d-flex justify-content-center">
                     <li class="header-info__list-item header-info__list-item--danger">
                         <i class="fas fa-exclamation-triangle"></i>
-                        <span>You are not protected</span>
+                        <span class="pl-1">You are not protected</span>
                     </li>
                     <li class="header-info__list-item">
                         <span>Your IP Address:</span>
@@ -40,12 +40,347 @@
             </div>
         </div>
         <!-- /header__info-->
-        <nav></nav>
-        <!--/nav-->
+        <div class="header__wrapper">
+            <a href="#" class="header__logo">Company Name</a>
+            <!--/header__logo-->
+            <nav class="nav">
+                <a class="nav__item nav__item--arrow" href="#">Why Us</a>
+                <a class="nav__item" href="#">Vpn apps</a>
+                <a class="nav__item nav__item--arrow" href="#">support</a>
+                <a class="nav__item nav__item--arrow" href="#">Resources</a>
+            </nav>
+            <!--/nav-->
+            <div class="header__actions d-flex">
+                <a href="#" class="btn btn--default">log in</a>
+                <a href="#" class="btn btn--green">get started</a>
+            </div>
+            <!--/header__actions-->
+        </div>
+        <!--/header__wrapper-->
+        <section class="main-article">
+            <div class="container">
+                <article class="article article--header">
+                    <div class="article__left">
+                        <img src="img/tv-addons.jpg" alt="tv-addons">
+                    </div>
+                    <!--/article__left-->
+                    <div class="article__right">
+                        <h3 class="article__title">TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement
+                        </h3>
+                        <div class="article__about">
+                            <div>
+                                <span class="article__author">Danica Sergison</span>
+                                <span class="article__date">JUL 08, 2018</span>
+                            </div>
+                            <p class="article__rights">Copyright, News, Open Source, Privacy</p>
+                            <span class="article__views">0</span>
+                        </div>
+                    </div>
+                    <!--/article__right-->
+                </article>
+            </div>
+        </section>
+        <!--/section.main-article-->
     </header>
     <!-- / header -->
     <main>
+        <section class="tags">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="tags__left d-flex">
+                    <h5 class="tags__title">tags:</h5>
+                    <ul class="tags__list">
+                        <li class="tags__list-item">bitcoin</li>
+                        <li class="tags__list-item">bittorrent</li>
+                        <li class="tags__list-item">irc</li>
+                        <li class="tags__list-item">news</li>
+                        <li class="tags__list-item">privacy</li>
+                        <li class="tags__list-item">programming</li>
+                        <li class="tags__list-item">security</li>
+                    </ul>
+                </div>
+                <div class="tags__right">
+                    <span class="tags__right-item">team</span>
+                    <span class="tags__right-item">contact</span>
+                </div>
+            </div>
+        </section>
+        <!--/tags-->
 
+        <div class="main-wrapper container d-flex">
+            <section class="posts">
+                <h3 class="posts__title">Recent posts</h3>
+                <!--/posts__title-->
+                <ul class="posts__list">
+                    <li class="posts__list-item">
+                        <article class="article">
+                            <div class="article__left">
+                                <img src="img/art1.png" alt="art1">
+                            </div>
+                            <!--/article__left-->
+                            <div class="article__right">
+                                <h3 class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                                </h3>
+                                <div class="article__about">
+                                    <div>
+                                        <span class="article__author">Derek Zimmer</span>
+                                        <span class="article__date">JUL 25, 2018</span>
+                                    </div>
+                                    <p class="article__rights">Governments, Networking, Open Source, Privacy, Security</p>
+                                    <span class="article__views">0</span>
+                                </div>
+                            </div>
+                            <!--/article__right-->
+                        </article>
+                    </li>
+                    <!--/posts__list-item-->
+                    <li class="posts__list-item">
+                        <article class="article">
+                            <div class="article__left">
+                                <img src="img/art2.png" alt="art2">
+                            </div>
+                            <!--/article__left-->
+                            <div class="article__right">
+                                <h3 class="article__title">
+                                    How to get cheaper flights using a VPN
+                                </h3>
+                                <div class="article__about">
+                                    <div>
+                                        <span class="article__author">Jayson</span>
+                                        <span class="article__date">JUL 24, 2018</span>
+                                    </div>
+                                    <p class="article__rights">Guides</p>
+                                    <span class="article__views">0</span>
+                                </div>
+                            </div>
+                            <!--/article__right-->
+                        </article>
+                    </li>
+                    <!--/posts__list-item-->
+                    <li class="posts__list-item">
+                        <article class="article">
+                            <div class="article__left">
+                                <img src="img/art3.png" alt="art3">
+                            </div>
+                            <!--/article__left-->
+                            <div class="article__right">
+                                <h3 class="article__title">Net Neutrality was repealed, but the fight is far from over
+                                </h3>
+                                <div class="article__about">
+                                    <div>
+                                        <span class="article__author">Chris Miller</span>
+                                        <span class="article__date">JUL 22, 2018</span>
+                                    </div>
+                                    <p class="article__rights">Governments, Net Neutrality, News</p>
+                                    <span class="article__views">0</span>
+                                </div>
+                            </div>
+                            <!--/article__right-->
+                        </article>
+                    </li>
+                    <!--/posts__list-item-->
+                    <li class="posts__list-item">
+                        <article class="article">
+                            <div class="article__left">
+                                <img src="img/art1.png" alt="art1">
+                            </div>
+                            <!--/article__left-->
+                            <div class="article__right">
+                                <h3 class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                                </h3>
+                                <div class="article__about">
+                                    <div>
+                                        <span class="article__author">Derek Zimmer</span>
+                                        <span class="article__date">JUL 25, 2018</span>
+                                    </div>
+                                    <p class="article__rights">Governments, Networking, Open Source, Privacy, Security</p>
+                                    <span class="article__views">0</span>
+                                </div>
+                            </div>
+                            <!--/article__right-->
+                        </article>
+                    </li>
+                    <!--/posts__list-item-->
+                    <li class="posts__list-item">
+                        <article class="article">
+                            <div class="article__left">
+                                <img src="img/art2.png" alt="art2">
+                            </div>
+                            <!--/article__left-->
+                            <div class="article__right">
+                                <h3 class="article__title">
+                                    How to get cheaper flights using a VPN
+                                </h3>
+                                <div class="article__about">
+                                    <div>
+                                        <span class="article__author">Jayson</span>
+                                        <span class="article__date">JUL 24, 2018</span>
+                                    </div>
+                                    <p class="article__rights">Guides</p>
+                                    <span class="article__views">0</span>
+                                </div>
+                            </div>
+                            <!--/article__right-->
+                        </article>
+                    </li>
+                    <!--/posts__list-item-->
+                    <li class="posts__list-item">
+                        <article class="article">
+                            <div class="article__left">
+                                <img src="img/art3.png" alt="art3">
+                            </div>
+                            <!--/article__left-->
+                            <div class="article__right">
+                                <h3 class="article__title">Net Neutrality was repealed, but the fight is far from over
+                                </h3>
+                                <div class="article__about">
+                                    <div>
+                                        <span class="article__author">Chris Miller</span>
+                                        <span class="article__date">JUL 22, 2018</span>
+                                    </div>
+                                    <p class="article__rights">Governments, Net Neutrality, News</p>
+                                    <span class="article__views">0</span>
+                                </div>
+                            </div>
+                            <!--/article__right-->
+                        </article>
+                    </li>
+                    <!--/posts__list-item-->
+                </ul>
+                <!--/posts__list-->
+                <div class="text-center">
+                    <a href="#" class="btn btn--default btn--wide">Older Posts</a>
+                </div>
+            </section>
+            <!--/posts-->
+            <section class="sidebar">
+                <form class="sidebar__form" action="#">
+                    <i class="fas fa-search"></i>
+                    <input class="sidebar__form-input" type="text" placeholder="Search blog">
+                </form>
+                <!--/sidebar__form-->
+                <article class="sb-article">
+                    <h5 class="sb-article__title sb-article__title--announcements">Announcements</h5>
+                    <ul class="sb-article__list">
+                        <li class="sb-article__list-item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
+                        <li class="sb-article__list-item">New Servers (US Washington DC)</li>
+                        <li class="sb-article__list-item">New Servers (US Denver)</li>
+                        <li class="sb-article__list-item">Open Source: Releasing the PIA iOS Client</li>
+                        <li class="sb-article__list-item">Opera Extension is now available</li>
+                    </ul>
+                </article>
+                <!--/sb-article-->
+                <article class="sb-article">
+                    <h5 class="sb-article__title sb-article__title--posts">Popular posts</h5>
+                    <ul class="sb-article__list">
+                        <li class="sb-article__list-item">The Gift of Privacy</li>
+                        <li class="sb-article__list-item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</li>
+                        <li class="sb-article__list-item">About the PIA Client Security and VPN Security in General</li>
+                        <li class="sb-article__list-item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
+                        <li class="sb-article__list-item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
+                    </ul>
+                </article>
+                <!--/sb-article-->
+                <div class="sidebar__banner">
+                    <img src="img/big-brother.png" alt="big-brother">
+                </div>
+                <!--/sidebar__banner-->
+                <article class="sb-article">
+                    <h5 class="sb-article__title">Tag cloud</h5>
+                    <div class="sb-article__img">
+                        <img src="img/tag-cloud.png" alt="tag-cloud">
+                    </div>
+                </article>
+                <!--/sb-article-->
+            </section>
+            <!--/sidebar-->
+        </div>
+        <!--/container-->
+
+        <section class="sign-up">
+            <div class="container">
+                <h2 class="sign-up__title">Sign up today – 7 day money back guarantee</h2>
+                <!--/sign-up__title-->
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="su-card">
+                            <h5 class="su-card__title">Monthly</h5>
+                            <div class="su-card__price">
+                                <sup>$</sup>
+                                <span>6.95</span>
+                                <sub>/mo</sub>
+                            </div>
+                            <p class="su-card__description">Includes all VPN features.</p>
+                            <a href="#" class="btn btn--default btn--wide">Sign Up</a>
+                        </div>
+                    </div>
+                    <!--/col-4-->
+                    <div class="col-4">
+                        <div class="su-card su-card--active">
+                            <h5 class="su-card__title">Two Years</h5>
+                            <div class="su-card__price">
+                                <sup>$</sup>
+                                <span>2.91</span>
+                                <sub>/mo</sub>
+                            </div>
+                            <p class="su-card__description">
+                                <span class="text-red text-line-through">$166.80</span>
+                                <span>$69.95 per two years</span>
+                                <span class="d-block fw-700">Save 58%*</span>
+                            </p>
+                            <a href="#" class="btn btn--default btn--wide">Sign Up</a>
+                        </div>
+                    </div>
+                    <!--/col-4-->
+                    <div class="col-4">
+                        <div class="su-card">
+                            <h5 class="su-card__title">yearly</h5>
+                            <div class="su-card__price">
+                                <sup>$</sup>
+                                <span>3.33</span>
+                                <sub>/mo</sub>
+                            </div>
+                            <p class="su-card__description">
+                                <span class="text-red text-line-through">$83.40</span>
+                                <span>$39.95 per years</span>
+                                <span class="d-block fw-700">Save 52%*</span>
+                            </p>
+                            <a href="#" class="btn btn--default btn--wide">Sign Up</a>
+                        </div>
+                    </div>
+                    <!--/col-4-->
+                </div>
+                <!--/row-->
+                <div class="sign-up__payment d-flex justify-content-center align-items-center">
+                    <span class="sign-up__payment-text">Ways to pay:</span>
+                    <nav class="sign-up__links d-flex">
+                        <a href="#" class="sign-up__link">
+                            <img src="img/visa.png" alt="visa">
+                        </a>
+                        <a href="#" class="sign-up__link">
+                            <img src="img/mastercard.png" alt="mastercard">
+                        </a>
+                        <a href="#" class="sign-up__link">
+                            <img src="img/amex.png" alt="amex">
+                        </a>
+                        <a href="#" class="sign-up__link">
+                            <img src="img/paypal.png" alt="paypal">
+                        </a>
+                        <a href="#" class="sign-up__link">
+                            <img src="img/bitcoin.png" alt="bitcoin">
+                        </a>
+                        <a href="#" class="sign-up__link">
+                            <img src="img/okpay.png" alt="okpay">
+                        </a>
+                        <a href="#" class="sign-up__link">
+                            <img src="img/amazonpay.png" alt="amazonpay.png">
+                        </a>
+                    </nav>
+                   <!--/sign-up__links-->
+                </div>
+                <!--/sign-up__payment-->
+            </div>
+        </section>
+        <!--/sign-up-->
     </main>
     <!-- /main -->
     <footer class="footer">
