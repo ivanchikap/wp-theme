@@ -14,9 +14,18 @@
   &--active {
     border-color: $green;
     height: 380px;
-  }
-  sub,sup {
-    font-size: 14px;
+
+    @include mobile-large {
+      border-color: $orange;
+    }
+
+    .btn {
+      border-color: $orange;
+
+      &:hover {
+        background-color: $orange;
+      }
+    }
   }
 
   &__title {
@@ -41,13 +50,26 @@
   }
 
   &__price {
-    padding-top: 16px;
+    padding: 16px 0;
     border-bottom: 1px solid #EBECED;
     color: $black;
     font-weight: 300;
     font-size: 56px;
     line-height: 62px;
     letter-spacing: -1.5px;
+
+    sub, sup {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    sup {
+      vertical-align: top;
+    }
+
+    sub {
+      vertical-align: bottom;
+    }
   }
 
   &__description {

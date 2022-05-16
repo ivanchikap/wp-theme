@@ -1,5 +1,10 @@
 .header {
+  $root: &;
   padding-top: 40px;
+
+  @include mobile-large {
+    padding-top: 80px;
+  }
 
   &__wrapper {
     max-width: 1370px;
@@ -9,6 +14,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include tablet {
+      justify-content: start;
+    }
+
+    @include mobile {
+      padding: 0 10px;
+    }
   }
 
   &__logo {
@@ -20,5 +33,84 @@
 
   .btn + .btn {
     margin-left: 10px;
+  }
+
+  &__actions {
+    @include tablet {
+      margin-left: auto;
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+    margin-right: 18px;
+
+    &:hover {
+      color: $green;
+    }
+
+    @include tablet {
+      display: inline-block;
+    }
+  }
+
+  &__overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+    opacity: 0;
+    width: 200vw;
+  }
+
+  &__mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    max-width: 320px;
+    width: 100%;
+    transform: translateX(-106%);
+    transition: .3s ease-in-out;
+    height: 100vh;
+    z-index: 11;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, .2);
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    @include tablet {
+      display: block;
+    }
+
+    &--active {
+      transform: translateX(0);
+
+      #{$root}__overlay {
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+
+  &__mob-menu {
+    padding: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
   }
 }

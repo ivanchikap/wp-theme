@@ -7,30 +7,6 @@ body {
   background-color: #f2f2f2;
 }
 
-.container-fluid {
-  padding: 0 15px;
-}
-
-.container {
-  padding: 0 15px;
-  max-width: 1230px;
-  margin: 0 auto;
-
-  @include laptop {
-    max-width: 950px;
-  }
-  @include tablet {
-    max-width: 710px;
-  }
-  @include mobile-large {
-    max-width: 470px;
-  }
-  @include mobile {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-}
-
 .link-decor-on-hover {
   transition: text-decoration .3s ease;
   &:hover {
@@ -40,6 +16,18 @@ body {
 
 .d-block {
   display: block;
+}
+
+@include laptop {
+  .d-lg-block {
+    display: block;
+  }
+}
+
+@include tablet {
+  .d-md-block {
+    display: block;
+  }
 }
 
 @include mobile-large {
@@ -81,6 +69,13 @@ body {
 .d-none {
   display: none;
 }
+
+@include laptop{
+  .d-lg-none {
+    display: none;
+  }
+}
+
 
 .clearfix:after {
   content: '';
@@ -151,6 +146,11 @@ strong {
 .main-wrapper {
   padding-top: 40px;
   padding-bottom: 118px;
+
+  @include laptop {
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
 }
 
 .btn {

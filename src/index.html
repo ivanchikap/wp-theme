@@ -18,29 +18,63 @@
 <body>
     <header class="header" id="header">
         <div class="header-info">
-            <div class="container">
-                <ul class="header-info__list d-flex justify-content-center">
-                    <li class="header-info__list-item header-info__list-item--danger">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <span class="pl-1">You are not protected</span>
-                    </li>
-                    <li class="header-info__list-item">
-                        <span>Your IP Address:</span>
-                        <span>107.3.176.194</span>
-                    </li>
-                    <li class="header-info__list-item">
-                        <span>Your ISP: </span>
-                        <span>Comcast Cable</span>
-                    </li>
-                    <li class="header-info__list-item">
-                        <span>Learn More ›</span>
-                    </li>
-                </ul>
+            <div class="header-info__container">
+                <div class="row">
+                    <div class="col-3 col-sm-6 order-sm-1">
+                        <div class="header-info__item header-info__item--danger">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span class="pl-1">You are not protected</span>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 order-sm-3">
+                        <div class="header-info__item">
+                            <span>Your IP Address:</span>
+                            <span>107.3.176.194</span>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6 order-sm-3">
+                        <div class="header-info__item">
+                            <span>Your ISP: </span>
+                            <span>Comcast Cable</span>
+                        </div>
+                    </div>
+                    <div class="col-2 col-sm-6 order-sm-2">
+                        <div class="header-info__item header-info__item--white">
+                            <span>Learn More ›</span>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
                 <i class="header-info__close fas fa-times"></i>
             </div>
         </div>
         <!-- /header__info-->
         <div class="header__wrapper">
+            <i class="header__menu-btn fas fa-bars" id="header__menu-btn"></i>
+            <!--/nav__menu-btn-->
+            <div class="header__mobile" id="menu">
+                <div class="header__overlay" id="overlay"></div>
+                <div class="header__mob-menu">
+                    <nav class="nav nav--mob">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="header__logo">Company Name</a>
+                            <i class="far fa-times-circle" id="closeMenu"></i>
+                        </div>
+
+                        <a class="nav__item nav__item--arrow mt-4" href="#">Why Us</a>
+                        <a class="nav__item" href="#">Vpn apps</a>
+                        <a class="nav__item nav__item--arrow" href="#">support</a>
+                        <a class="nav__item nav__item--arrow" href="#">Resources</a>
+                    </nav>
+                   <!--/nav-->
+                    <div class="header__actions d-flex">
+                        <a href="#" class="btn btn--default mt-5 w-100">log in</a>
+                    </div>
+                    <!--/header__actions-->
+                </div>
+                <!--/nav__mob-menu-->
+            </div>
+            <!--/nav__mobile-->
             <a href="#" class="header__logo">Company Name</a>
             <!--/header__logo-->
             <nav class="nav">
@@ -51,7 +85,7 @@
             </nav>
             <!--/nav-->
             <div class="header__actions d-flex">
-                <a href="#" class="btn btn--default">log in</a>
+                <a href="#" class="btn btn--default d-md-none">log in</a>
                 <a href="#" class="btn btn--green">get started</a>
             </div>
             <!--/header__actions-->
@@ -84,7 +118,7 @@
     </header>
     <!-- / header -->
     <main>
-        <section class="tags">
+        <section class="tags d-md-none">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="tags__left d-flex">
                     <h5 class="tags__title">tags:</h5>
@@ -106,8 +140,13 @@
         </section>
         <!--/tags-->
 
-        <div class="main-wrapper container d-flex">
+        <div class="main-wrapper container d-flex flex-lg-column">
             <section class="posts">
+                <form class="sidebar__form d-none d-lg-block" action="#">
+                    <i class="fas fa-search"></i>
+                    <input class="sidebar__form-input" type="text" placeholder="Search blog">
+                </form>
+                <!--/sidebar__form-->
                 <h3 class="posts__title">Recent posts</h3>
                 <!--/posts__title-->
                 <ul class="posts__list">
@@ -253,7 +292,7 @@
             </section>
             <!--/posts-->
             <section class="sidebar">
-                <form class="sidebar__form" action="#">
+                <form class="sidebar__form d-lg-none" action="#">
                     <i class="fas fa-search"></i>
                     <input class="sidebar__form-input" type="text" placeholder="Search blog">
                 </form>
@@ -301,7 +340,7 @@
                 <h2 class="sign-up__title">Sign up today – 7 day money back guarantee</h2>
                 <!--/sign-up__title-->
                 <div class="row align-items-center">
-                    <div class="col-4">
+                    <div class="col-4 col-md-6 col-sm-12">
                         <div class="su-card">
                             <h5 class="su-card__title">Monthly</h5>
                             <div class="su-card__price">
@@ -314,7 +353,7 @@
                         </div>
                     </div>
                     <!--/col-4-->
-                    <div class="col-4">
+                    <div class="col-4 col-md-6 col-sm-12">
                         <div class="su-card su-card--active">
                             <h5 class="su-card__title">Two Years</h5>
                             <div class="su-card__price">
@@ -331,7 +370,7 @@
                         </div>
                     </div>
                     <!--/col-4-->
-                    <div class="col-4">
+                    <div class="col-4 col-md-6 col-sm-12">
                         <div class="su-card">
                             <h5 class="su-card__title">yearly</h5>
                             <div class="su-card__price">
@@ -350,9 +389,9 @@
                     <!--/col-4-->
                 </div>
                 <!--/row-->
-                <div class="sign-up__payment d-flex justify-content-center align-items-center">
-                    <span class="sign-up__payment-text">Ways to pay:</span>
-                    <nav class="sign-up__links d-flex">
+                <div class="sign-up__payment d-flex justify-content-center align-items-center flex-md-column">
+                    <span class="sign-up__payment-text mb-md-4">Ways to pay:</span>
+                    <nav class="sign-up__links d-flex flex-wrap">
                         <a href="#" class="sign-up__link">
                             <img src="img/visa.png" alt="visa">
                         </a>
@@ -378,13 +417,117 @@
                    <!--/sign-up__links-->
                 </div>
                 <!--/sign-up__payment-->
+                <div class="sign-up__actions">
+                    <a href="#" class="sign-up__action">How to pay anonymously</a>
+                    <a href="#" class="sign-up__action">Redeem gift card</a>
+                </div>
             </div>
         </section>
         <!--/sign-up-->
     </main>
     <!-- /main -->
     <footer class="footer">
+        <div class="container">
+            <a href="#" class="footer__logo">Company Name</a>
+            <!--/header__logo-->
+            <div class="row">
+                <div class="col-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-4 col-sm-6">
+                            <div class="footer__item">
+                                <h4 class="footer__title">Company</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">About Us</li>
+                                    <li class="footer__list-item">Our Team</li>
+                                    <li class="footer__list-item">Careers</li>
+                                    <li class="footer__list-item">Press</li>
+                                    <li class="footer__list-item">In the Media</li>
+                                    <li class="footer__list-item">VPN Reviews</li>
+                                    <li class="footer__list-item">Contact Us</li>
+                                    <li class="footer__list-item">Blog</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/col-4-->
+                        <div class="col-4 col-sm-6">
+                            <div class="footer__item">
+                                <h4 class="footer__title">programs</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">Whitehat Security</li>
+                                    <li class="footer__list-item">Affiliates</li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h4 class="footer__title">learn more</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">VPN Encryption</li>
+                                    <li class="footer__list-item">Android VPN App</li>
+                                    <li class="footer__list-item">iOS VPN App</li>
+                                    <li class="footer__list-item">PIA Sitemap</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/col-4-->
+                        <div class="col-4 col-sm-6">
+                            <div class="footer__item">
+                                <h4 class="footer__title">Legal</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">Terms Of Service</li>
+                                    <li class="footer__list-item">Privacy Policy</li>
+                                    <li class="footer__list-item">DMCA Policy</li>
+                                    <li class="footer__list-item">Export Control Policy</li>
+                                </ul>
+                            </div>
 
+                        </div>
+                        <!--/col-4-->
+                        <div class="col-sm-6  d-none d-sm-block">
+                            <div class="footer__social">
+                                <h4 class="footer__title">Social</h4>
+                                <nav class="footer__nav d-flex flex-sm-column">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="footer__link"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="footer__link"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="footer__link"><i class="fab fa-google-plus-g"></i></a>
+                                    </div>
+                                    <div class="mt-sm-4 d-flex justify-content-between">
+                                        <a href="#" class="footer__link"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" class="footer__link"><i class="fab fa-reddit"></i></a>
+                                        <a href="#" class="footer__link"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-12">
+                    <div class="footer__item">
+                        <h4 class="footer__title">About</h4>
+                        <p>Private Internet Access is the leading VPN Service provider specializing in secure, encrypted VPN tunnels which create several layers of privacy and security providing you safety on the internet. Our service is backed by multiple gateways worldwide with access in 28+ countries, 44+ regions.</p>
+                        <div class="footer__small-text">
+                            <p>Map data provided by Google.</p>
+                            <p>
+                               <span>PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</span>
+                               <span>PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</span>
+                            </p>
+                            <p>© London Trust Media, Inc. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="footer__social d-sm-none">
+                        <h4 class="footer__title">Social</h4>
+                        <nav class="footer__nav d-flex">
+                            <a href="#" class="footer__link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer__link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer__link"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="footer__link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="footer__link"><i class="fab fa-reddit"></i></a>
+                            <a href="#" class="footer__link"><i class="fab fa-youtube"></i></a>
+                        </nav>
+                    </div>
+                </div>
+                <!--/col-6-->
+            </div>
+        </div>
     </footer>
     <!-- / footer -->
 

@@ -1,12 +1,23 @@
+.container-fluid {
+  padding: 0 15px;
+}
+
 .container {
   padding: 0 15px;
-  max-width: 1170px;
+  max-width: 1230px;
   margin: 0 auto;
-}
-.container-fluid {
-  width: 100%;
-  padding: 0 15px;
+
+  @include laptop {
+    max-width: 950px;
+  }
+  @include tablet {
+    max-width: 710px;
+  }
+  @include mobile-large {
+    max-width: 470px;
+  }
   @include mobile {
+    max-width: 100%;
     padding: 0 10px;
   }
 }

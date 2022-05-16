@@ -1,0 +1,101 @@
+.footer {
+  padding: 84px 0 90px 0;
+  color: $grey;
+  line-height: 22px;
+
+  @include mobile-large {
+    padding: 44px 0 48px 0;
+  }
+
+  &__logo {
+    font-family: $inter;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 58px;
+
+    @include mobile-large {
+      margin-bottom: 54px;
+    }
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mobile-large {
+    .col-sm-6:not(:nth-child(-n+2)) {
+      margin-top: 35px;
+    }
+    .col-sm-12:not(:nth-child(-n+1)) {
+      margin-top: 40px;
+    }
+  }
+
+  &__item {
+    & + & {
+      margin-top: 58px;
+
+      @include mobile-large {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $light-black;
+  }
+
+  &__list-item {
+    text-transform: capitalize;
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  &__small-text {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 16px;
+
+    span {
+      display: block;
+    }
+
+    p + p {
+      margin-top: 18px;
+    }
+  }
+
+  &__social {
+    margin-top: 40px;
+
+    @include mobile-large {
+      margin-top: 0;
+    }
+  }
+
+  &__nav {
+    margin-top: 25px;
+  }
+
+  &__link  {
+    font-size: 24px;
+    color: $light-black;
+
+    & + & {
+      margin-left: 31px;
+
+      @include mobile-large {
+        margin-left: 12px;
+      }
+    }
+  }
+}

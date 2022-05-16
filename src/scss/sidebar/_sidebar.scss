@@ -1,10 +1,18 @@
 .sidebar {
   padding-left: 58px;
-  flex: 0 0 400px;
-  max-width: 400px;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+
+  @include laptop {
+    margin-top: 70px;
+    padding-left: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
 
   & > * {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
     &:last-child {
       margin-bottom: 0;
@@ -15,6 +23,11 @@
     width: 100%;
     position: relative;
     color: $black;
+    margin-bottom: 30px;
+
+    @include laptop {
+      margin-bottom: 40px;
+    }
 
     i.fas {
       position: absolute;

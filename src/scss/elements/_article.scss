@@ -3,21 +3,44 @@
   display: flex;
   height: 180px;
 
+  @include mobile-large {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
   &--header {
     background-color: #fff;
     border: 1px solid #D7D8D9;
     border-radius: 6px;
     height: 400px;
 
+    @include tablet {
+      flex-direction: column;
+      height: auto;
+    }
+
     #{$root} {
       &__right {
         width: 50%;
         padding: 60px 60px 40px;
         filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+
+        @include tablet {
+          width: 100%;
+        }
+
+        @include tablet {
+          padding: 30px 30px 14px 30px;
+        }
       }
       &__left {
         width: 50%;
         height: 100%;
+
+        @include tablet {
+          width: 100%;
+        }
       }
     }
   }
@@ -25,6 +48,10 @@
   &__left {
     width: 280px;
     flex-shrink: 0;
+
+    @include mobile-large {
+      width: 100%;
+    }
 
     img {
       height: 100%;
@@ -38,6 +65,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablet {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include mobile-large {
+      padding: 20px 0;
+    }
   }
 
   &__title {

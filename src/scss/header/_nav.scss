@@ -1,7 +1,39 @@
 .nav {
+  $root: &;
   color: $black;
   text-align: center;
   display: flex;
+
+  @include tablet {
+    display: none;
+  }
+
+  &.nav--mob {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+
+    #{$root} {
+      &__item {
+        font-size: 18px;
+
+        & + .nav__item {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+
+      &--arrow::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f105";
+        margin-left: 22px;
+      }
+    }
+  }
+
 
   &__item {
     font-weight: 500;
@@ -27,6 +59,19 @@
 
     & + & {
       margin-left: 30px;
+    }
+  }
+
+  .fa-times-circle {
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: color .2s ease-in-out;
+    z-index: 12;
+
+    &:hover {
+      color: $green;
     }
   }
 }

@@ -4,13 +4,30 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 
+  @include mobile-large {
+    padding: 60px 0 40px 0;
+  }
+
   &__title {
     font-weight: 300;
     font-size: 48px;
     line-height: 64px;   
     letter-spacing: -0.5px;
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+
+    @include mobile-large {
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+    }
+  }
+
+  &__payment {
+    max-width: 916px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
   }
 
   &__payment-text {
@@ -18,16 +35,80 @@
     font-size: 18px;
     line-height: 28px;
     color: #fff;
-    margin-right: 30px;
+    padding-right: 15px;
+    white-space: nowrap;
   }
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
+    width: 14%;
+
+    &:last-child {
+      padding-right: 0;
+
+      @include mobile-large {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @include mobile-large {
+      width: 33.3333%;
+    }
+  }
+
+  .row {
+    padding: 20px 0;
+    margin-bottom: 31px;
+  }
+
+  @include tablet {
+    .col-md-6:not(:nth-child(-n + 2)) {
+      margin-top: 20px;
+    }
+    .col-sm-12:not(:nth-child(-n + 1)) {
+      margin-top: 20px;
+    }
+  }
+
+  &__actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile-large {
+      flex-direction: column;
+    }
+  }
+
+  &__action {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: $green;
+    display: flex;
 
     & + & {
-      margin-left: 36px;
+      margin-left: 40px;
+
+      @include mobile-large {
+        margin-left: 0;
+        margin-top: 34px;
+      }
+    }
+
+    &::after {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: inherit;
+      content: '\f30b';
+      margin-left: 12px;
     }
   }
 }
