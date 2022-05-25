@@ -37,6 +37,7 @@
       &__left {
         width: 50%;
         height: 100%;
+        overflow: hidden;
 
         @include tablet {
           width: 100%;
@@ -48,16 +49,17 @@
   &__left {
     width: 280px;
     flex-shrink: 0;
+    overflow: hidden;
 
     @include mobile-large {
       width: 100%;
     }
+  }
 
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
+  &__left-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   &__right {
@@ -120,5 +122,4 @@
       font-size: 12px;
     }
   }
-
 }

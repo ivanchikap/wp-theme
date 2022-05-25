@@ -10,7 +10,6 @@
     max-width: 100%;
   }
 
-
   & > * {
   margin-bottom: 32px;
 
@@ -26,16 +25,25 @@
     margin-bottom: 30px;
 
     @include laptop {
+      display: none;
       margin-bottom: 40px;
     }
 
-    i.fas {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 18px;
+    &--posts {
+      display: none;
+
+      @include laptop {
+        display: block;
+      }
     }
+  }
+
+  &__form-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
   }
 
   &__form-input {
@@ -56,14 +64,15 @@
     }
   }
 
-  &__sidebar {
+  &__banner {
     width: 100%;
     height: 454px;
+    overflow: hidden;
+  }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  &__banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

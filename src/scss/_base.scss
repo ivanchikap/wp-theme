@@ -5,6 +5,19 @@ body {
   line-height: 1;
   color: $light-black;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.title {
+  visibility: hidden;
+  height: 0;
 }
 
 .link-decor-on-hover {
@@ -146,8 +159,10 @@ strong {
 .main-wrapper {
   padding-top: 40px;
   padding-bottom: 118px;
+  display: flex;
 
   @include laptop {
+    flex-direction: column;
     padding-bottom: 40px;
     padding-top: 10px;
   }

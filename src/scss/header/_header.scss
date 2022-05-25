@@ -29,15 +29,36 @@
     color: #000;
     font-size: 18px;
     padding: 6px 0;
-  }
-
-  .btn + .btn {
-    margin-left: 10px;
+    white-space: nowrap;
   }
 
   &__actions {
+    display: flex;
+
     @include tablet {
       margin-left: auto;
+    }
+
+    &--mob {
+      margin-top: 40px;
+    }
+  }
+
+  &__actions-btn {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__btn {
+    &:first-child {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    & + & {
+      margin-left: 10px;
     }
   }
 

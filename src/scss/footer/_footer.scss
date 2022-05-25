@@ -25,6 +25,16 @@
     flex-direction: column;
   }
 
+  &__row {
+    .col-sm-6:last-child {
+      display: none;
+
+      @include mobile-large {
+        display: block;
+      }
+    }
+  }
+
   @include mobile-large {
     .col-sm-6:not(:nth-child(-n+2)) {
       margin-top: 35px;
@@ -64,12 +74,14 @@
     margin-top: 12px;
     font-size: 12px;
     line-height: 16px;
+  }
 
-    span {
-      display: block;
-    }
+  &__small-text-span {
+    display: block;
+  }
 
-    p + p {
+  &__small-text-p {
+    & + & {
       margin-top: 18px;
     }
   }
@@ -80,10 +92,35 @@
     @include mobile-large {
       margin-top: 0;
     }
+
+    &--bottom {
+      @include mobile-large {
+        display: none;
+      }
+    }
   }
 
   &__nav {
     margin-top: 25px;
+    display: flex;
+
+    @include mobile-large {
+      flex-direction: column;
+    }
+  }
+
+  &__nav-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile-large {
+      margin-top: 26px;
+    }
   }
 
   &__link  {

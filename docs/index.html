@@ -19,31 +19,39 @@
     <header class="header" id="header">
         <div class="header-info">
             <div class="header-info__container">
-                <div class="row">
+                <dl class="row">
                     <div class="col-3 col-sm-6 order-sm-1">
                         <div class="header-info__item header-info__item--danger">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            <span class="pl-1">You are not protected</span>
+                            <i class="header-info__item-icon fas fa-exclamation-triangle"></i>
+                            <span class="header-info__item-text pl-1">You are not protected</span>
                         </div>
                     </div>
                     <div class="col-4 col-sm-6 order-sm-3">
                         <div class="header-info__item">
-                            <span>Your IP Address:</span>
-                            <span>107.3.176.194</span>
+                            <dt class="header-info__item-text">
+                                Your IP Address:
+                            </dt>
+                            <dd class="header-info__item-text">
+                               107.3.176.194
+                            </dd>
                         </div>
                     </div>
                     <div class="col-3 col-sm-6 order-sm-3">
-                        <div class="header-info__item">
-                            <span>Your ISP: </span>
-                            <span>Comcast Cable</span>
+                        <div class="header-info__item justify-content-sm-end">
+                            <dt class="header-info__item-text">
+                               Your ISP:
+                            </dt>
+                            <dd class="header-info__item-text">
+                               Comcast Cable
+                            </dd>
                         </div>
                     </div>
                     <div class="col-2 col-sm-6 order-sm-2">
-                        <div class="header-info__item header-info__item--white">
-                            <span>Learn More ›</span>
+                        <div class="header-info__item header-info__item--white justify-content-sm-end">
+                            <span class="header-info__item-text">Learn More ›</span>
                         </div>
                     </div>
-                </div>
+                </dl>
                 <!--/row-->
                 <i class="header-info__close fas fa-times"></i>
             </div>
@@ -56,26 +64,28 @@
                 <div class="header__overlay" id="overlay"></div>
                 <div class="header__mob-menu">
                     <nav class="nav nav--mob">
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="nav__top-wrapper">
                             <a href="#" class="header__logo">Company Name</a>
-                            <i class="far fa-times-circle" id="closeMenu"></i>
+                            <i class="nav__icon-close far fa-times-circle" id="closeMenu"></i>
                         </div>
-
-                        <a class="nav__item nav__item--arrow mt-4" href="#">Why Us</a>
+                        <!--/nav__top-wrapper-->
+                        <a class="nav__item nav__item--arrow" href="#">Why Us</a>
                         <a class="nav__item" href="#">Vpn apps</a>
                         <a class="nav__item nav__item--arrow" href="#">support</a>
                         <a class="nav__item nav__item--arrow" href="#">Resources</a>
                     </nav>
                    <!--/nav-->
-                    <div class="header__actions d-flex">
-                        <a href="#" class="btn btn--default mt-5 w-100">log in</a>
+                    <div class="header__actions header__actions--mob">
+                        <a href="#" class="header__actions-btn btn btn--default btn--wide">log in</a>
                     </div>
                     <!--/header__actions-->
                 </div>
                 <!--/nav__mob-menu-->
             </div>
             <!--/nav__mobile-->
-            <a href="#" class="header__logo">Company Name</a>
+            <h1 class="header__title">
+                <a href="#" class="header__logo">Company Name</a>
+            </h1>
             <!--/header__logo-->
             <nav class="nav">
                 <a class="nav__item nav__item--arrow" href="#">Why Us</a>
@@ -84,25 +94,27 @@
                 <a class="nav__item nav__item--arrow" href="#">Resources</a>
             </nav>
             <!--/nav-->
-            <div class="header__actions d-flex">
-                <a href="#" class="btn btn--default d-md-none">log in</a>
-                <a href="#" class="btn btn--green">get started</a>
+            <div class="header__actions">
+                <a href="#" class="header__btn btn btn--default">log in</a>
+                <a href="#" class="header__btn btn btn--green">get started</a>
             </div>
             <!--/header__actions-->
         </div>
         <!--/header__wrapper-->
         <section class="main-article">
+            <h2 class="title">Main article</h2>
+            <!--/title-->
             <div class="container">
                 <article class="article article--header">
                     <div class="article__left">
-                        <img src="img/tv-addons.jpg" alt="tv-addons">
+                        <img class="article__left-img" src="img/tv-addons.jpg" alt="tv-addons">
                     </div>
                     <!--/article__left-->
                     <div class="article__right">
                         <h3 class="article__title">TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement
                         </h3>
                         <div class="article__about">
-                            <div>
+                            <div class="article__about-inner">
                                 <span class="article__author">Danica Sergison</span>
                                 <span class="article__date">JUL 08, 2018</span>
                             </div>
@@ -117,10 +129,13 @@
         <!--/section.main-article-->
     </header>
     <!-- / header -->
-    <main>
+
+    <main class="main">
         <section class="tags d-md-none">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="tags__left d-flex">
+            <h3 class="title">Tags</h3>
+            <!--/title-->
+            <div class="tags__container container">
+                <div class="tags__left">
                     <h5 class="tags__title">tags:</h5>
                     <ul class="tags__list">
                         <li class="tags__list-item">bitcoin</li>
@@ -139,12 +154,15 @@
             </div>
         </section>
         <!--/tags-->
-
-        <div class="main-wrapper container d-flex flex-lg-column">
+        <div class="main-wrapper container">
             <section class="posts">
-                <form class="sidebar__form d-none d-lg-block" action="#">
-                    <i class="fas fa-search"></i>
-                    <input class="sidebar__form-input" type="text" placeholder="Search blog">
+                <h2 class="title">Recent posts</h2>
+                <!--/title-->
+                <form class="sidebar__form sidebar__form--posts" action="#">
+                    <label class="sidebar__form-label" for="search">
+                        <i class="sidebar__form-icon fas fa-search"></i>
+                    </label>
+                    <input id="search" class="sidebar__form-input" type="text" placeholder="Search blog">
                 </form>
                 <!--/sidebar__form-->
                 <h3 class="posts__title">Recent posts</h3>
@@ -153,14 +171,14 @@
                     <li class="posts__list-item">
                         <article class="article">
                             <div class="article__left">
-                                <img src="img/art1.png" alt="art1">
+                                <img class="article__left-img" src="img/art1.png" alt="art1">
                             </div>
                             <!--/article__left-->
                             <div class="article__right">
                                 <h3 class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
                                 </h3>
                                 <div class="article__about">
-                                    <div>
+                                    <div class="article__about-wrapper">
                                         <span class="article__author">Derek Zimmer</span>
                                         <span class="article__date">JUL 25, 2018</span>
                                     </div>
@@ -175,7 +193,7 @@
                     <li class="posts__list-item">
                         <article class="article">
                             <div class="article__left">
-                                <img src="img/art2.png" alt="art2">
+                                <img class="article__left-img" src="img/art2.png" alt="art2">
                             </div>
                             <!--/article__left-->
                             <div class="article__right">
@@ -183,7 +201,7 @@
                                     How to get cheaper flights using a VPN
                                 </h3>
                                 <div class="article__about">
-                                    <div>
+                                    <div class="article__about-wrapper">
                                         <span class="article__author">Jayson</span>
                                         <span class="article__date">JUL 24, 2018</span>
                                     </div>
@@ -198,14 +216,14 @@
                     <li class="posts__list-item">
                         <article class="article">
                             <div class="article__left">
-                                <img src="img/art3.png" alt="art3">
+                                <img class="article__left-img" src="img/art3.png" alt="art3">
                             </div>
                             <!--/article__left-->
                             <div class="article__right">
                                 <h3 class="article__title">Net Neutrality was repealed, but the fight is far from over
                                 </h3>
                                 <div class="article__about">
-                                    <div>
+                                    <div class="article__about-wrapper">
                                         <span class="article__author">Chris Miller</span>
                                         <span class="article__date">JUL 22, 2018</span>
                                     </div>
@@ -220,14 +238,14 @@
                     <li class="posts__list-item">
                         <article class="article">
                             <div class="article__left">
-                                <img src="img/art1.png" alt="art1">
+                                <img class="article__left-img" src="img/art1.png" alt="art1">
                             </div>
                             <!--/article__left-->
                             <div class="article__right">
                                 <h3 class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
                                 </h3>
                                 <div class="article__about">
-                                    <div>
+                                    <div class="article__about-wrapper">
                                         <span class="article__author">Derek Zimmer</span>
                                         <span class="article__date">JUL 25, 2018</span>
                                     </div>
@@ -242,7 +260,7 @@
                     <li class="posts__list-item">
                         <article class="article">
                             <div class="article__left">
-                                <img src="img/art2.png" alt="art2">
+                                <img class="article__left-img" src="img/art2.png" alt="art2">
                             </div>
                             <!--/article__left-->
                             <div class="article__right">
@@ -250,7 +268,7 @@
                                     How to get cheaper flights using a VPN
                                 </h3>
                                 <div class="article__about">
-                                    <div>
+                                    <div class="article__about-wrapper">
                                         <span class="article__author">Jayson</span>
                                         <span class="article__date">JUL 24, 2018</span>
                                     </div>
@@ -265,14 +283,14 @@
                     <li class="posts__list-item">
                         <article class="article">
                             <div class="article__left">
-                                <img src="img/art3.png" alt="art3">
+                                <img class="article__left-img" src="img/art3.png" alt="art3">
                             </div>
                             <!--/article__left-->
                             <div class="article__right">
                                 <h3 class="article__title">Net Neutrality was repealed, but the fight is far from over
                                 </h3>
                                 <div class="article__about">
-                                    <div>
+                                    <div class="article__about-wrapper">
                                         <span class="article__author">Chris Miller</span>
                                         <span class="article__date">JUL 22, 2018</span>
                                     </div>
@@ -286,15 +304,17 @@
                     <!--/posts__list-item-->
                 </ul>
                 <!--/posts__list-->
-                <div class="text-center">
+                <div class="posts__link-wrapper text-center">
                     <a href="#" class="btn btn--default btn--wide">Older Posts</a>
                 </div>
             </section>
             <!--/posts-->
-            <section class="sidebar">
-                <form class="sidebar__form d-lg-none" action="#">
-                    <i class="fas fa-search"></i>
-                    <input class="sidebar__form-input" type="text" placeholder="Search blog">
+            <aside class="sidebar">
+                <form class="sidebar__form" action="#">
+                    <label for="search1">
+                        <i class="sidebar__form-icon fas fa-search"></i>
+                    </label>
+                    <input id="search1" class="sidebar__form-input" type="text" placeholder="Search blog">
                 </form>
                 <!--/sidebar__form-->
                 <article class="sb-article">
@@ -320,36 +340,37 @@
                 </article>
                 <!--/sb-article-->
                 <div class="sidebar__banner">
-                    <img src="img/big-brother.png" alt="big-brother">
+                    <img class="sidebar__banner-img" src="img/big-brother.png" alt="big-brother">
                 </div>
                 <!--/sidebar__banner-->
-                <article class="sb-article">
-                    <h5 class="sb-article__title">Tag cloud</h5>
+                <figure class="sb-article">
+                    <figcaption class="sb-article__title">Tag cloud</figcaption>
                     <div class="sb-article__img">
-                        <img src="img/tag-cloud.png" alt="tag-cloud">
+                        <img class="sidebar__picture" src="img/tag-cloud.png" alt="tag-cloud">
                     </div>
-                </article>
+                </figure>
                 <!--/sb-article-->
-            </section>
+            </aside>
             <!--/sidebar-->
         </div>
         <!--/container-->
-
         <section class="sign-up">
+            <h2 class="title">Sign up</h2>
+            <!--/title-->
             <div class="container">
                 <h2 class="sign-up__title">Sign up today – 7 day money back guarantee</h2>
                 <!--/sign-up__title-->
-                <div class="row align-items-center">
+                <div class="sign-up__row row">
                     <div class="col-4 col-md-6 col-sm-12">
                         <div class="su-card">
                             <h5 class="su-card__title">Monthly</h5>
                             <div class="su-card__price">
-                                <sup>$</sup>
-                                <span>6.95</span>
-                                <sub>/mo</sub>
+                                <sup class="su-card__price-sup">$</sup>
+                                <span class="su-card__price-value">6.95</span>
+                                <sub class="su-card__price-sub">/mo</sub>
                             </div>
                             <p class="su-card__description">Includes all VPN features.</p>
-                            <a href="#" class="btn btn--default btn--wide">Sign Up</a>
+                            <a href="#" class="su-card__btn btn btn--default btn--wide">Sign Up</a>
                         </div>
                     </div>
                     <!--/col-4-->
@@ -357,16 +378,16 @@
                         <div class="su-card su-card--active">
                             <h5 class="su-card__title">Two Years</h5>
                             <div class="su-card__price">
-                                <sup>$</sup>
-                                <span>2.91</span>
-                                <sub>/mo</sub>
+                                <sup class="su-card__price-sup">$</sup>
+                                <span class="su-card__price-value">2.91</span>
+                                <sub class="su-card__price-sub">/mo</sub>
                             </div>
                             <p class="su-card__description">
-                                <span class="text-red text-line-through">$166.80</span>
-                                <span>$69.95 per two years</span>
-                                <span class="d-block fw-700">Save 58%*</span>
+                                <span class="su-card__old-price">$166.80</span>
+                                <span class="su-card__description-text">$69.95 per two years</span>
+                                <span class="su-card__description-text">Save 58%*</span>
                             </p>
-                            <a href="#" class="btn btn--default btn--wide">Sign Up</a>
+                            <a href="#" class="su-card__btn btn btn--default btn--wide">Sign Up</a>
                         </div>
                     </div>
                     <!--/col-4-->
@@ -374,44 +395,44 @@
                         <div class="su-card">
                             <h5 class="su-card__title">yearly</h5>
                             <div class="su-card__price">
-                                <sup>$</sup>
-                                <span>3.33</span>
-                                <sub>/mo</sub>
+                                <sup class="su-card__price-sup">$</sup>
+                                <span class="su-card__price-value">3.33</span>
+                                <sub class="su-card__price-sub">/mo</sub>
                             </div>
                             <p class="su-card__description">
-                                <span class="text-red text-line-through">$83.40</span>
-                                <span>$39.95 per years</span>
-                                <span class="d-block fw-700">Save 52%*</span>
+                                <span class="su-card__old-price">$83.40</span>
+                                <span class="su-card__description-text">$39.95 per years</span>
+                                <span class="su-card__description-text">Save 52%*</span>
                             </p>
-                            <a href="#" class="btn btn--default btn--wide">Sign Up</a>
+                            <a href="#" class="su-card__btn btn btn--default btn--wide">Sign Up</a>
                         </div>
                     </div>
                     <!--/col-4-->
                 </div>
                 <!--/row-->
-                <div class="sign-up__payment d-flex justify-content-center align-items-center flex-md-column">
-                    <span class="sign-up__payment-text mb-md-4">Ways to pay:</span>
-                    <nav class="sign-up__links d-flex flex-wrap">
+                <div class="sign-up__payment">
+                    <span class="sign-up__payment-text">Ways to pay:</span>
+                    <nav class="sign-up__links">
                         <a href="#" class="sign-up__link">
-                            <img src="img/visa.png" alt="visa">
+                            <img class="sign-up__link-img" src="img/visa.png" alt="visa">
                         </a>
                         <a href="#" class="sign-up__link">
-                            <img src="img/mastercard.png" alt="mastercard">
+                            <img class="sign-up__link-img" src="img/mastercard.png" alt="mastercard">
                         </a>
                         <a href="#" class="sign-up__link">
-                            <img src="img/amex.png" alt="amex">
+                            <img class="sign-up__link-img" src="img/amex.png" alt="amex">
                         </a>
                         <a href="#" class="sign-up__link">
-                            <img src="img/paypal.png" alt="paypal">
+                            <img class="sign-up__link-img" src="img/paypal.png" alt="paypal">
                         </a>
                         <a href="#" class="sign-up__link">
-                            <img src="img/bitcoin.png" alt="bitcoin">
+                            <img class="sign-up__link-img" src="img/bitcoin.png" alt="bitcoin">
                         </a>
                         <a href="#" class="sign-up__link">
-                            <img src="img/okpay.png" alt="okpay">
+                            <img class="sign-up__link-img" src="img/okpay.png" alt="okpay">
                         </a>
                         <a href="#" class="sign-up__link">
-                            <img src="img/amazonpay.png" alt="amazonpay.png">
+                            <img class="sign-up__link-img" src="img/amazonpay.png" alt="amazonpay.png">
                         </a>
                     </nav>
                    <!--/sign-up__links-->
@@ -426,13 +447,14 @@
         <!--/sign-up-->
     </main>
     <!-- /main -->
+
     <footer class="footer">
         <div class="container">
             <a href="#" class="footer__logo">Company Name</a>
             <!--/header__logo-->
             <div class="row">
                 <div class="col-6 col-sm-12">
-                    <div class="row">
+                    <div class="footer__row row">
                         <div class="col-4 col-sm-6">
                             <div class="footer__item">
                                 <h4 class="footer__title">Company</h4>
@@ -478,52 +500,71 @@
                                     <li class="footer__list-item">Export Control Policy</li>
                                 </ul>
                             </div>
-
                         </div>
                         <!--/col-4-->
-                        <div class="col-sm-6  d-none d-sm-block">
+                        <div class="col-sm-6">
                             <div class="footer__social">
                                 <h4 class="footer__title">Social</h4>
-                                <nav class="footer__nav d-flex flex-sm-column">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="footer__link"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#" class="footer__link"><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="footer__link"><i class="fab fa-google-plus-g"></i></a>
+                                <!--/footer__title-->
+                                <nav class="footer__nav">
+                                    <div class="footer__nav-top">
+                                        <a href="#" class="footer__link">
+                                            <i class="footer__link-icon fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="footer__link">
+                                            <i class="footer__link-icon fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="footer__link">
+                                            <i class="footer__link-icon fab fa-google-plus-g"></i>
+                                        </a>
                                     </div>
-                                    <div class="mt-sm-4 d-flex justify-content-between">
-                                        <a href="#" class="footer__link"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#" class="footer__link"><i class="fab fa-reddit"></i></a>
-                                        <a href="#" class="footer__link"><i class="fab fa-youtube"></i></a>
+                                    <!--/footer__nav-inner-->
+                                    <div class="footer__nav-bottom">
+                                        <a href="#" class="footer__link">
+                                            <i class=" footer__link-icon fab fa-linkedin"></i>
+                                        </a>
+                                        <a href="#" class="footer__link">
+                                            <i class=" footer__link-icon fab fa-reddit"></i>
+                                        </a>
+                                        <a href="#" class="footer__link">
+                                            <i class=" footer__link-icon fab fa-youtube"></i>
+                                        </a>
                                     </div>
+                                    <!--/footer__nav-inner-->
                                 </nav>
+                                <!--/footer__nav-->
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--/col-6-->
                 <div class="col-6 col-sm-12">
                     <div class="footer__item">
                         <h4 class="footer__title">About</h4>
-                        <p>Private Internet Access is the leading VPN Service provider specializing in secure, encrypted VPN tunnels which create several layers of privacy and security providing you safety on the internet. Our service is backed by multiple gateways worldwide with access in 28+ countries, 44+ regions.</p>
+                        <p class="footer__paragraph">Private Internet Access is the leading VPN Service provider specializing in secure, encrypted VPN tunnels which create several layers of privacy and security providing you safety on the internet. Our service is backed by multiple gateways worldwide with access in 28+ countries, 44+ regions.
+                        </p>
                         <div class="footer__small-text">
-                            <p>Map data provided by Google.</p>
-                            <p>
-                               <span>PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</span>
-                               <span>PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</span>
+                            <p class="footer__small-text-p">Map data provided by Google.</p>
+                            <p class="footer__small-text-p">
+                               <span class="footer__small-text-span">PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</span>
+                               <span class="footer__small-text-span">PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</span>
                             </p>
-                            <p>© London Trust Media, Inc. All Rights Reserved.</p>
+                            <p class="footer__small-text-p">© London Trust Media, Inc. All Rights Reserved.</p>
                         </div>
                     </div>
-                    <div class="footer__social d-sm-none">
+                    <!--/footer__item-->
+                    <div class="footer__social footer__social--bottom">
                         <h4 class="footer__title">Social</h4>
-                        <nav class="footer__nav d-flex">
-                            <a href="#" class="footer__link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="footer__link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="footer__link"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" class="footer__link"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="footer__link"><i class="fab fa-reddit"></i></a>
-                            <a href="#" class="footer__link"><i class="fab fa-youtube"></i></a>
+                        <nav class="footer__nav">
+                            <a href="#" class="footer__link"><i class="footer__link-icon fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer__link"><i class="footer__link-icon fab fa-twitter"></i></a>
+                            <a href="#" class="footer__link"><i class="footer__link-icon fab fa-google-plus-g"></i></a>
+                            <a href="#" class="footer__link"><i class="footer__link-icon fab fa-linkedin"></i></a>
+                            <a href="#" class="footer__link"><i class="footer__link-icon fab fa-reddit"></i></a>
+                            <a href="#" class="footer__link"><i class="footer__link-icon fab fa-youtube"></i></a>
                         </nav>
                     </div>
+                    <!--/footer__social-->
                 </div>
                 <!--/col-6-->
             </div>

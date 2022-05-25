@@ -24,10 +24,17 @@
   }
 
   &__payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 916px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 0;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__payment-text {
@@ -37,6 +44,15 @@
     color: #fff;
     padding-right: 15px;
     white-space: nowrap;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -45,6 +61,7 @@
     align-items: center;
     padding: 0 15px;
     width: 14%;
+    overflow: hidden;
 
     &:last-child {
       padding-right: 0;
@@ -60,9 +77,10 @@
     }
   }
 
-  .row {
+  &__row {
     padding: 20px 0;
     margin-bottom: 31px;
+    align-items: center;
   }
 
   @include tablet {

@@ -12,10 +12,6 @@
     height: auto;
   }
 
-  .col-sm-6:not(:nth-child(-n + 2)) {
-    text-align: right;
-  }
-
   &__container {
     max-width: 642px;
     padding-left: 15px;
@@ -35,6 +31,8 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
