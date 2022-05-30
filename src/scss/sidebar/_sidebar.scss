@@ -38,7 +38,7 @@
     }
   }
 
-  &__form-icon {
+  &__form_icon {
     position: absolute;
     left: 20px;
     top: 50%;
@@ -46,7 +46,7 @@
     font-size: 18px;
   }
 
-  &__form-input {
+  &__form_input {
     width: 100%;
     background: #fff;
     border: 1px solid #D7D8D9;
@@ -70,7 +70,7 @@
     overflow: hidden;
   }
 
-  &__banner-img {
+  &__banner_img {
     width: 100%;
     height: 100%;
     object-fit: cover;

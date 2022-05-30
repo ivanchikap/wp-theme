@@ -1,4 +1,4 @@
-.su-card {
+.su_card {
   $root: &;
   padding: 36px 40px 36px;
   filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.501961));
@@ -60,20 +60,20 @@
     letter-spacing: -1.5px;
   }
 
-  &__price-sup, #{$root}__price-sub {
+  &__price_sup, #{$root}__price_sub {
     font-size: 24px;
     line-height: 32px;
   }
 
-  &__price-sup {
+  &__price_sup {
     vertical-align: top;
   }
 
-  &__price-sub {
+  &__price_sub {
     vertical-align: bottom;
   }
   
-  &__old-price {
+  &__old_price {
     color: $red;
     text-decoration: line-through;
   }
@@ -83,7 +83,7 @@
     margin-top: 27px;
   }
 
-  &__description-text {
+  &__description_text {
     &:last-child {
       font-weight: 700;
       display: block;

@@ -6,6 +6,10 @@
   text-transform: uppercase;
   color: $light-black;
 
+  @include tablet {
+    display: none;
+  }
+
   &__container {
     padding: 21px 48px;
     background-color: #F7F7F7;
@@ -25,7 +29,7 @@
     margin-right: 20px;
   }
 
-  &__list-item {
+  &__list_item {
     color: $green;
     cursor: pointer;
     letter-spacing: 0.8px;
@@ -44,7 +48,7 @@
     }
   }
 
-  &__right-item:first-child {
+  &__right_item:first-child {
     margin-right: 38px;
   }
 }

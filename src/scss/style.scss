@@ -1,13 +1,12 @@
 @import "reset";
 @import "variables";
 @import "mixins";
-@import "flex";
 @import "grid";
 @import "fontawesome";
 @import "base";
 
 @import "header/all";
-@import "main-article/main-article";
+@import "main_article/main_article";
 @import "elements/article";
 @import "tags/tags";
 @import "posts/posts";
