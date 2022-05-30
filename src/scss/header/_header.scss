@@ -24,13 +24,24 @@
     }
   }
 
+  &__title {
+    overflow: hidden;
+  }
+
   &__logo {
     font-family: $inter;
     color: #000;
     font-size: 18px;
-    padding: 6px 0;
+    padding: 6px 6px 6px 0;
     white-space: nowrap;
     transition: transform .2s ease;
+    overflow: hidden;
+    max-width: 140px;
+
+    @include tablet {
+      padding-left: 6px;
+      max-width: 150px;
+    }
 
     &:hover {
       transform: scale(1.03);
@@ -39,13 +50,20 @@
 
   &__actions {
     display: flex;
+    max-width: 28%;
+    overflow: hidden;
 
     @include tablet {
       margin-left: auto;
     }
 
+    @include mobile-large {
+      max-width: 50%;
+    }
+
     &--mob {
       margin-top: 40px;
+      max-width: 100%;
     }
   }
 
@@ -70,7 +88,7 @@
   &__menu-btn {
     display: none;
     font-size: 20px;
-    padding: 8px;
+    padding: 8px 6px;
     cursor: pointer;
     transition: color .2s ease-in-out;
     margin-right: 18px;

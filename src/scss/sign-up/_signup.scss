@@ -30,7 +30,6 @@
     max-width: 916px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 0;
 
     @include tablet {
       flex-direction: column;
@@ -44,6 +43,8 @@
     color: #fff;
     padding-right: 15px;
     white-space: nowrap;
+    max-width: 136px;
+    overflow: hidden;
 
     @include tablet {
       margin-bottom: 20px;
@@ -53,13 +54,14 @@
   &__links {
     display: flex;
     flex-wrap: wrap;
+    max-width: 780px;
   }
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 15px;
+    padding: 10px 15px;
     width: 14%;
     overflow: hidden;
     transition: transform .2s ease-out;
@@ -119,6 +121,11 @@
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all .2s ease-out;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
 
     &:hover {
      border-color: $green;
@@ -139,6 +146,7 @@
       color: inherit;
       content: '\f30b';
       margin-left: 12px;
+      flex-shrink: 0;
     }
   }
 }

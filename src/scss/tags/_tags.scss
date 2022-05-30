@@ -21,6 +21,30 @@
 
   &__left {
     display: flex;
+    max-width: 75%;
+    overflow: hidden;
+    padding-right: 8px;
+  }
+
+  &__right {
+    max-width: 25%;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  &__right_item {
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__title {
+    white-space: nowrap;
+    flex-shrink: 0;
+    max-width: 140px;
+    overflow: hidden;
   }
 
   &__list {
@@ -34,6 +58,7 @@
     cursor: pointer;
     letter-spacing: 0.8px;
     transition: all .2s ease;
+    white-space: nowrap;
 
     &:hover {
       transform: scale(1.07);

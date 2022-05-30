@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 
   &--active {
     border-color: $green;
@@ -38,6 +39,10 @@
     letter-spacing: 0.8px;
     text-transform: uppercase;
     color: $light-black;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
 
     &::after {
       content: '';
@@ -51,13 +56,17 @@
   }
 
   &__price {
-    padding: 16px 0;
+    padding: 16px 4px;
     border-bottom: 1px solid #EBECED;
     color: $black;
     font-weight: 300;
     font-size: 56px;
     line-height: 62px;
     letter-spacing: -1.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
   }
 
   &__price_sup, #{$root}__price_sub {
@@ -81,6 +90,8 @@
   &__description {
     line-height: 22px;
     margin-top: 27px;
+    max-height: 44px;
+    overflow: hidden;
   }
 
   &__description_text {
