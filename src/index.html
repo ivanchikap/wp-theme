@@ -7,7 +7,6 @@
           content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>wp-theme</title>
-    <link type="image/png" rel="shortcut icon" href="img/logo.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +15,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header headerElement">
         <div class="header-info">
             <div class="header-info__container">
                 <dl class="row">
                     <div class="col-3 col-sm-6 order-sm-1">
                         <div class="header-info__item header-info__item--danger">
-                            <i class="header-info__item-icon fas fa-exclamation-triangle"></i>
-                            <span class="header-info__item-text pl-1">You are not protected</span>
+                            <a href="#" class="header-info__item-text header-info__item-text--link header-info__item-text--icon">You are not protected</a>
                         </div>
                     </div>
                     <div class="col-4 col-sm-6 order-sm-3">
@@ -48,7 +46,7 @@
                     </div>
                     <div class="col-2 col-sm-6 order-sm-2">
                         <div class="header-info__item header-info__item--white justify-content-sm-end">
-                            <span class="header-info__item-text">Learn More ›</span>
+                            <a href="#" class="header-info__item-text header-info__item-text--link">Learn More ›</a>
                         </div>
                     </div>
                 </dl>
@@ -58,15 +56,15 @@
         </div>
         <!-- /header__info-->
         <div class="header__wrapper">
-            <i class="header__menu-btn fas fa-bars" id="header__menu-btn"></i>
+            <i class="header__menu-btn fas fa-bars headerMenuBtn"></i>
             <!--/nav__menu-btn-->
-            <div class="header__mobile" id="menu">
-                <div class="header__overlay" id="overlay"></div>
+            <div class="header__mobile headerMobile">
+                <div class="header__overlay headerOverlay"></div>
                 <div class="header__mob-menu">
                     <nav class="nav nav--mob">
                         <div class="nav__top-wrapper">
                             <a href="#" class="header__logo">Company Name</a>
-                            <i class="nav__icon-close far fa-times-circle" id="closeMenu"></i>
+                            <i class="nav__icon-close far fa-times-circle closeIcon"></i>
                         </div>
                         <!--/nav__top-wrapper-->
                         <a class="nav__item nav__item--arrow" href="#">Why Us</a>
@@ -106,13 +104,13 @@
             <!--/title-->
             <div class="container">
                 <article class="article article--header">
-                    <div class="article__left">
+                    <a href="#" class="article__left">
                         <img class="article__left-img" src="img/tv-addons.jpg" alt="tv-addons">
-                    </div>
+                    </a>
                     <!--/article__left-->
                     <div class="article__right">
-                        <h3 class="article__title">TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement
-                        </h3>
+                        <a href="#" class="article__title">TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement
+                        </a>
                         <div class="article__about">
                             <div class="article__about-inner">
                                 <span class="article__author">Danica Sergison</span>
@@ -125,6 +123,7 @@
                     <!--/article__right-->
                 </article>
             </div>
+            <!--/container-->
         </section>
         <!--/section.main-article-->
     </header>
@@ -170,13 +169,13 @@
                 <ul class="posts__list">
                     <li class="posts__list-item">
                         <article class="article">
-                            <div class="article__left">
+                            <a href="#" class="article__left">
                                 <img class="article__left-img" src="img/art1.png" alt="art1">
-                            </div>
+                            </a>
                             <!--/article__left-->
                             <div class="article__right">
-                                <h3 class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
-                                </h3>
+                                <a href="#" class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                                </a>
                                 <div class="article__about">
                                     <div class="article__about-wrapper">
                                         <span class="article__author">Derek Zimmer</span>
@@ -192,14 +191,14 @@
                     <!--/posts__list-item-->
                     <li class="posts__list-item">
                         <article class="article">
-                            <div class="article__left">
+                            <a href="#" class="article__left">
                                 <img class="article__left-img" src="img/art2.png" alt="art2">
-                            </div>
+                            </a>
                             <!--/article__left-->
                             <div class="article__right">
-                                <h3 class="article__title">
+                                <a href="#" class="article__title">
                                     How to get cheaper flights using a VPN
-                                </h3>
+                                </a>
                                 <div class="article__about">
                                     <div class="article__about-wrapper">
                                         <span class="article__author">Jayson</span>
@@ -215,13 +214,13 @@
                     <!--/posts__list-item-->
                     <li class="posts__list-item">
                         <article class="article">
-                            <div class="article__left">
+                            <a href="#" class="article__left">
                                 <img class="article__left-img" src="img/art3.png" alt="art3">
-                            </div>
+                            </a>
                             <!--/article__left-->
                             <div class="article__right">
-                                <h3 class="article__title">Net Neutrality was repealed, but the fight is far from over
-                                </h3>
+                                <a href="#" class="article__title">Net Neutrality was repealed, but the fight is far from over
+                                </a>
                                 <div class="article__about">
                                     <div class="article__about-wrapper">
                                         <span class="article__author">Chris Miller</span>
@@ -237,13 +236,13 @@
                     <!--/posts__list-item-->
                     <li class="posts__list-item">
                         <article class="article">
-                            <div class="article__left">
+                            <a href="#" class="article__left">
                                 <img class="article__left-img" src="img/art1.png" alt="art1">
-                            </div>
+                            </a>
                             <!--/article__left-->
                             <div class="article__right">
-                                <h3 class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
-                                </h3>
+                                <a href="#" class="article__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                                </a>
                                 <div class="article__about">
                                     <div class="article__about-wrapper">
                                         <span class="article__author">Derek Zimmer</span>
@@ -259,14 +258,14 @@
                     <!--/posts__list-item-->
                     <li class="posts__list-item">
                         <article class="article">
-                            <div class="article__left">
+                            <a href="#" class="article__left">
                                 <img class="article__left-img" src="img/art2.png" alt="art2">
-                            </div>
+                            </a>
                             <!--/article__left-->
                             <div class="article__right">
-                                <h3 class="article__title">
+                                <a href="#" class="article__title">
                                     How to get cheaper flights using a VPN
-                                </h3>
+                                </a>
                                 <div class="article__about">
                                     <div class="article__about-wrapper">
                                         <span class="article__author">Jayson</span>
@@ -282,13 +281,13 @@
                     <!--/posts__list-item-->
                     <li class="posts__list-item">
                         <article class="article">
-                            <div class="article__left">
+                            <a href="#" class="article__left">
                                 <img class="article__left-img" src="img/art3.png" alt="art3">
-                            </div>
+                            </a>
                             <!--/article__left-->
                             <div class="article__right">
-                                <h3 class="article__title">Net Neutrality was repealed, but the fight is far from over
-                                </h3>
+                                <a href="#" class="article__title">Net Neutrality was repealed, but the fight is far from over
+                                </a>
                                 <div class="article__about">
                                     <div class="article__about-wrapper">
                                         <span class="article__author">Chris Miller</span>

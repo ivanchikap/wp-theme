@@ -62,6 +62,11 @@
     padding: 0 15px;
     width: 14%;
     overflow: hidden;
+    transition: transform .2s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     &:last-child {
       padding-right: 0;
@@ -111,6 +116,13 @@
     text-transform: uppercase;
     color: $green;
     display: flex;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all .2s ease-out;
+
+    &:hover {
+     border-color: $green;
+    }
 
     & + & {
       margin-left: 40px;
