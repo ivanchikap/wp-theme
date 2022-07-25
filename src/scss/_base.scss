@@ -64,6 +64,11 @@ body {
   &.btn--wide {
     padding-left: 80px;
     padding-right: 80px;
+
+    @include mobile {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &--green {

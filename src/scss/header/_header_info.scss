@@ -55,6 +55,10 @@
     flex-shrink: 0;
     max-width: 100%;
 
+    @include mobile {
+      font-size: 11px;
+    }
+
     &--list {
       max-width: 50%;
       padding: 0 2px;
